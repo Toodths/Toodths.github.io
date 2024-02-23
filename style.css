@@ -1,0 +1,27 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+  
+.games {
+    border-radius: 30px;
+    height: 360px;
+    width: 600px;
+    border: 15px solid #a23f91;
+    background-color: #e873d5;
+    padding: 5px;
+    margin: 5px;
+    float: left;
+}
+  
+.music {
+    border-radius: 30px;
+    height: 430px;
+    width: 800px;
+    border: 15px solid #c36b18;
+    background-color: #d38236;
+    padding: 5px;
+    margin: 5px;
+    float: right;
+}
+  
