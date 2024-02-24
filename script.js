@@ -1,7 +1,13 @@
-function miau() {
-    scramble()
+
+
+function updateVol(){
+  var slider = document.getElementById("myRange");
+  for (let i = 1; i < 5; i++) {
+    var y = document.getElementById("v" + i.toString())
+    y.volume = (slider.value / 100);
   }
-  
+}
+
 function randomIntFromInterval(min, max) { // min and max included 
     return Math.floor(Math.random() * (max - min + 1) + min)
 }
