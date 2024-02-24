@@ -1,27 +1,60 @@
 html {
     height: 100%;
     width: 100%;
+    background-color: #050505;
 }
   
-.games {
+.welcome{
+    width: 900px;
+    background: #01013d;
+    text-align: center;
+    border: 5px outset #9B4F96;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 15px;
+    position: relative;
+    box-shadow: 0px 0px 10px #9B4F96;
     border-radius: 30px;
-    height: 360px;
-    width: 600px;
-    border: 15px solid #a23f91;
-    background-color: #e873d5;
+}
+  
+.leftbox {
+    border-radius: 30px;
+    width: 620px;
+    border: 5px outset #9B4F96;
+    background-color: #01013d;
     padding: 5px;
     margin: 5px;
+    box-shadow: 0px 0px 10px #9B4F96;
     float: left;
 }
   
-.music {
+.rightbox {
     border-radius: 30px;
-    height: 430px;
     width: 800px;
-    border: 15px solid #c36b18;
-    background-color: #d38236;
+    border: 5px outset #9B4F96;
+    background-color: #01013d;
     padding: 5px;
     margin: 5px;
+    box-shadow: 0px 0px 10px #9B4F96;
     float: right;
 }
   
+header {
+    width: 100%;
+    height: 50px;
+    border-top: 3px solid #9B4F96 ;
+    border-bottom: 3px solid #9B4F96;
+    box-shadow: -1px 0 5px #9B4F96;
+}
+  
+h1{
+    color: #D60270;
+}
+  
+h2{
+    color: #D60270;
+}
+  
+li{
+    color: #D60270;
+}

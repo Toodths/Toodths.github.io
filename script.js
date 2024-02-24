@@ -7,10 +7,10 @@ function randomIntFromInterval(min, max) { // min and max included
 }
   
 function scramble() {
-    for (let i = 1; i < 14; i++) {
+    for (let i = 1; i < 16; i++) {
       var x = document.getElementById(i);
-      var xrand = randomIntFromInterval(0, 1800);
-      var yrand = randomIntFromInterval(0, 900);
+      var xrand = randomIntFromInterval(675, 1000);
+      var yrand = randomIntFromInterval(400, 880);
       x.style.left = xrand.toString() + "px";
       x.style.top = yrand.toString() + "px";
     }
