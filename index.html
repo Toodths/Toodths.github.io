@@ -136,7 +136,7 @@
   </div>
   <div class="rightbox" style = "width: 1200px;">
     <h2 style="float: right; font-size: smaller; padding-right: 15px;">Content with boarders are videos, click to play/pause</h2>
-    <input type="range" min="0.1" max="15" value="5" id="myRange" oninput="updateVol();" style="width: 20%;"><h2 style="float: left; font-size: small;">volume</h2>
+    <input type="range" min="0.1" max="17" value="5" id="myRange" oninput="updateVol();" class = "slider"><h2 style="float: left; font-size: small;">volume</h2>
     <center><h2 style="position: relative; top: -15px; text-decoration: underline; left: 1px; margin: 1.3%;">The Gallery</h2></center> 
     <img src="/images/funy/jermaCat.JPG" style="float: left; padding: 10px; width: 35%; height: 35%;">
     <img src="/images/funy/vinnyCriminal.png" style="float: left; padding: 10px; width: 36%; height: 36%;">
@@ -146,29 +146,43 @@
     <img src="/images/funy/goodevil.gif" style="float: left; padding: 15px; width: 12%; ">
     <img src="/images/funy/sins.png" style="float: left; padding: 10px; width: 16%; height: 13%;">
     <div class="video" style="padding: 15px; float: left;">
-      <video onclick="this.paused ? this.play() : this.pause();" width="427px" id = "v1">
+      <video onclick="this.paused ? this.play() : this.pause(); boarderChange(this);" onpause="boarderChange(this);" width="427px" id = "v1">
         <source src="images/funy/videos/BATH.mp4" type="video/mp4">
       </video>
     </div>
     <div class="video" style="padding: 15px; float: left;">
-      <video onclick="this.paused ? this.play() : this.pause();" width="280px" id = "v2">
+      <video onclick="this.paused ? this.play() : this.pause(); boarderChange(this);" onpause="boarderChange(this);" width="280px" id = "v2">
         <source src="images/funy/videos/solvingthepuzzel.mp4" type="video/mp4">
       </video>
     </div>
     <div class="video" style="padding: 15px; float: left;">
-      <video onclick="this.paused ? this.play() : this.pause();" width="130px" id = "v3">
+      <video onclick="this.paused ? this.play() : this.pause(); boarderChange(this);" onpause="boarderChange(this);" width="130px" id = "v3">
         <source src="images/funy/videos/vinnyCriminal.mp4" type="video/mp4">
       </video>
     </div>
     <div class="video" style="padding: 15px; float: left;">
-      <video onclick="this.paused ? this.play() : this.pause();" width="140px" id = "v4">
+      <video onclick="this.paused ? this.play() : this.pause(); boarderChange(this);" onpause="boarderChange(this);" width="140px" id = "v4">
         <source src="images/funy/videos/sisyphus.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="video" style="padding: 15px; float: left; clear: right;">
+      <video onclick="this.paused ? this.play() : this.pause(); boarderChange(this);" onpause="boarderChange(this);" width="300px" id = "v5">
+        <source src="images/funy/videos/marioCat.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="video" style="padding: 15px; float: left; clear: right;">
+      <video onclick="this.paused ? this.play() : this.pause(); boarderChange(this);" onpause="boarderChange(this);" width="400px" id = "v6">
+        <source src="images/funy/videos/theSog.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="video" style="padding: 15px; float: left; clear: right;">
+      <video onclick="this.paused ? this.play() : this.pause(); boarderChange(this);" onpause="boarderChange(this);" width="225px" id = "v7">
+        <source src="images/funy/videos/REAOW.mp4" type="video/mp4">
       </video>
     </div>
   </div>
   <img src="/images/fudge.png" style="position: relative; top: -450px; left: -750px; padding: 10px; width: 10%;" alt="My Dog Fudge :D">
-  <img src="/images/jaffa.png" style="position: relative; top: -460px; left: -700px; padding: 10px; width: 20%;"
-    alt="My Cat Jaffa :3">
+  <img src="/images/jaffa.png" style="position: relative; top: -460px; left: -700px; padding: 10px; width: 20%;" alt="My Cat Jaffa :3">
   <script> 
     window.onload = updateVol;
   </script>
