@@ -66,9 +66,9 @@
       <h2 style="position: relative; top: -10px;"><span style = "text-decoration: underline;">Games i like</span><span style="font-size:13px;"> *in no particular
           order*</span></h2>
     </center>
-    <img src="images/game covers/Harry.png" style="float: right; width: 179px; height: 240px; padding-right: 18px; padding-bottom: 5px;">
-    <img src="images/game covers/Sion.jpg" style="float: right; clear: right; width: 310px; height: 180px; padding-right: 18px">
-    <img src="images/game covers/Tabby.png" style=" position: relative; float: right; width: 150px; height: 150px; bottom: -30px; padding-right: 18px">
+    <img src="images/game covers/Harry.png" style="float: right; width: 179px; margin-bottom: 5px; margin-right: 18px;">
+    <img src="images/game covers/Sion.jpg" style="float: right; clear: right; width: 310px; height: 180px; margin-right: 18px;">
+    <img src="images/game covers/Tabby.png" style=" position: relative; float: right; width: 150px; bottom: -30px; margin-right: 18px;">
     <ul style="font-size:22px;">
       <li>Team Fortress 2 (demo + soldier)</li>
       <li>Binding of Isaac</li>
@@ -88,12 +88,10 @@
       <h2 style="position: relative; top: -10px;"><span style = "text-decoration: underline;">Music i like</span><span style="font-size:13px;"> *in no particular
           order*</span></h2>
     </center>
-    <img src="images/music covers/Ants from Up There.jpg" style="float: right; width: 200px; height: 200px; padding-right: 50px;">
-    <img src="images/music covers/Exmilitary.png" style="float: right; width: 200px; height: 200px; padding-right: 18px;">
-    <img src="images/music covers/Twin Fantasy.jpg"
-      style="float: right; width: 200px; height: 200px; clear: right; padding-right: 50px; padding-top: 10px;">
-    <img src="images/music covers/Visions & Afterthoughts.png"
-      style="float: right; width: 200px; height: 200px; padding-right: 18px; padding-top: 10px;">
+    <img src="images/music covers/Ants from Up There.jpg" style="float: right; width: 200px; margin-right: 50px;">
+    <img src="images/music covers/Exmilitary.png" style="float: right; width: 200px; margin-right: 18px;">
+    <img src="images/music covers/Twin Fantasy.jpg" style="float: right; width: 200px; clear: right; margin-right: 50px; margin-top: 10px;">
+    <img src="images/music covers/Visions & Afterthoughts.png" style="float: right; width: 200px; margin-right: 18px; margin-top: 10px;">
     <ul style="font-size:24px;">
       <li>Black Midi</li>
       <li>Jay Reatard <span style="font-size: 15px;">(rest in peace)</span></li>
@@ -110,6 +108,7 @@
       <li>DYL</li>
       <li>Jane Remover</li>
       <li>Candlemass</li>
+      <li>Maruja</li>
     </ul>
   </div>
   <div class="leftbox">
@@ -136,15 +135,15 @@
   </div>
   <div class="rightbox" style = "width: 1200px;">
     <h2 style="float: right; font-size: smaller; padding-right: 15px;">Content with boarders are videos, click to play/pause</h2>
-    <input type="range" min="0.1" max="17" value="5" id="myRange" oninput="updateVol();" class = "slider"><h2 style="float: left; font-size: small;">volume</h2>
+    <input type="range" min="1" max="30" value="5" id="myRange" oninput="updateVol();" class = "slider"><h2 style="float: left; font-size: medium;">volume</h2>
     <center><h2 style="position: relative; top: -15px; text-decoration: underline; left: 1px; margin: 1.3%;">The Gallery</h2></center> 
-    <img src="/images/funy/jermaCat.JPG" style="float: left; padding: 10px; width: 35%; height: 35%;">
-    <img src="/images/funy/vinnyCriminal.png" style="float: left; padding: 10px; width: 36%; height: 36%;">
-    <img src="/images/funy/scram.JPG" style="float: left; padding: 10px; width: 20%; height: 20%;">
-    <img src="/images/funy/vinnySmirk.gif" style="float: left; clear: both; padding: 10px; width: 36%; height: 36%;">
-    <img src="/images/funy/catdy.gif" style="float: left; padding: 10px; width: 21%; height: 20%;">
-    <img src="/images/funy/goodevil.gif" style="float: left; padding: 15px; width: 12%; ">
-    <img src="/images/funy/sins.png" style="float: left; padding: 10px; width: 16%; height: 13%;">
+    <img src="/images/funy/jermaCat.JPG" style="float: left; margin: 15px; width: 35%; height: 35%;">
+    <img src="/images/funy/vinnyCriminal.png" style="float: left; margin: 15px; width: 36%; height: 36%;">
+    <img src="/images/funy/scram.JPG" style="float: left; margin: 15px; width: 20%; height: 20%;">
+    <img src="/images/funy/vinnySmirk.gif" style="float: left; clear: both; margin: 15px; width: 35%; height: 36%;">
+    <img src="/images/funy/catdy.gif" style="float: left; margin: 15px; width: 21%; height: 20%;">
+    <img src="/images/funy/goodevil.gif" style="float: left; margin: 15px; width: 12%; ">
+    <img src="/images/funy/sins.png" style="float: left; margin: 15px; width: 16%; height: 13%;">
     <div class="video" style="padding: 15px; float: left;">
       <video onclick="this.paused ? this.play() : this.pause(); boarderChange(this);" onpause="boarderChange(this);" width="427px" id = "v1">
         <source src="images/funy/videos/BATH.mp4" type="video/mp4">
@@ -178,6 +177,46 @@
     <div class="video" style="padding: 15px; float: left; clear: right;">
       <video onclick="this.paused ? this.play() : this.pause(); boarderChange(this);" onpause="boarderChange(this);" width="225px" id = "v7">
         <source src="images/funy/videos/REAOW.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="video" style="padding: 15px; float: left; clear: right;">
+      <video onclick="this.paused ? this.play() : this.pause(); boarderChange(this);" onpause="boarderChange(this);" width="700px" id = "v8">
+        <source src="images/funy/videos/Anarcho-syndicalistBased.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="video" style="padding: 15px; float: left; clear: right;">
+      <video onclick="this.paused ? this.play() : this.pause(); boarderChange(this);" onpause="boarderChange(this);" width="610px" id = "v9">
+        <source src="images/funy/videos/Beak.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="video" style="padding: 15px; float: left; clear: right;">
+      <video onclick="this.paused ? this.play() : this.pause(); boarderChange(this);" onpause="boarderChange(this);" width="460px" id = "v10">
+        <source src="images/funy/videos/Jerky.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="video" style="padding: 15px; float: left; clear: right;">
+      <video onclick="this.paused ? this.play() : this.pause(); boarderChange(this);" onpause="boarderChange(this);" width="460px" id = "v11">
+        <source src="images/funy/videos/Simon.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="video" style="padding: 15px; float: left; clear: right;">
+      <video onclick="this.paused ? this.play() : this.pause(); boarderChange(this);" onpause="boarderChange(this);" width="460px" id = "v12">
+        <source src="images/funy/videos/EEEE.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="video" style="padding: 15px; float: left; clear: right;">
+      <video onclick="this.paused ? this.play() : this.pause(); boarderChange(this);" onpause="boarderChange(this);" width="345px" id = "v13">
+        <source src="images/funy/videos/ShortShorts.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="video" style="padding: 15px; float: left; clear: right;">
+      <video onclick="this.paused ? this.play() : this.pause(); boarderChange(this);" onpause="boarderChange(this);" width="460px" id = "v14">
+        <source src="images/funy/videos/Charliesinthehouse.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="video" style="padding: 15px; float: left; clear: right;">
+      <video onclick="this.paused ? this.play() : this.pause(); boarderChange(this);" onpause="boarderChange(this);" width="460px" id = "v15">
+        <source src="images/funy/videos/Understand.mp4" type="video/mp4">
       </video>
     </div>
   </div>

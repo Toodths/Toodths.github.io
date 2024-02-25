@@ -60,7 +60,7 @@ li{
 }
 
 video {
-    border-radius: 30px;
+    border-radius: 15px;
     border: 2px solid #9B4F96;
     background-color: #01013d;
     padding: 1px;
@@ -97,3 +97,7 @@ button {
     background: #01013d;
     cursor: pointer;
   }
+
+img{
+    border-radius: 5%;
+}

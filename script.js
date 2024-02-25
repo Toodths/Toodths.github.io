@@ -2,7 +2,7 @@
 
 function updateVol(){
   var slider = document.getElementById("myRange");
-  for (let i = 1; i < 8; i++) {
+  for (let i = 1; i < 16; i++) {
     var y = document.getElementById("v" + i.toString())
     y.volume = (slider.value / 100);
   }
