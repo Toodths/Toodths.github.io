@@ -5,7 +5,7 @@ fetch('https://corsproxy.io/?https://api.steampowered.com/IPlayerService/GetOwne
 
 function updateVol(){
   var slider = document.getElementById("myRange");
-  for (let i = 1; i < 16; i++) {
+  for (let i = 1; i < 18; i++) {
     var y = document.getElementById("v" + i.toString())
     y.volume = (slider.value / 100);
   }
@@ -13,6 +13,7 @@ function updateVol(){
 
 function getSteamHours(steamid, elementid)
 {
+  if (steamid.length < 17) { document.getElementById(elementid).innerHTML = "????"; return; }
   var totalPlayTime = 0;
     fetch('https://corsproxy.io/?https://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=28FE417B6906C45F07E57AE3177BCFC1&skip_unvetted_apps=false&steamid='+steamid+'&format=json&include_played_free_games=1include_appinfo')
     .then(data => data.json())
