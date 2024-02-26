@@ -51,7 +51,7 @@
     <img src="images/funy/catExplode.gif" style="float: left; width: 13%; height: 13%; padding: 5px;">
     <h2 style = "position: relative; left: -21%; font-family: Comic Sans MS;">Hii!</h2>
     <h2 style = "position: relative; left: -6.3%;">Im Toodths<span style="font-size:13px;"> (17 he/him) </span>and this is my fully homemade webbed site!</h2>
-    <h2>This site will basically serve as a little place where i can rant about things i like so i can spare the people around me the hassle of me 
+    <h2>This site will basically serve as a place where i can rant about things i like so i can spare the people around me the hassle of me 
     explaining why Bioshock is actually a cultural critique of anarchocapitalism and adjacent rambles.<br>
     I've basically got 3 really passionate hobbies that i engage in regularly and consistently comprised of mainly: 
     programming, gaming and music(only listening, learning would require too much effort).
@@ -63,7 +63,8 @@
   </center>
   <button style="position: relative; font-size: 20px; top: 60; left: 900;" onclick="scramble()">Scimblo</button>
   <div class="leftbox" style="width: 40%;">
-    <h2 style="float: right;">Steam game count: <span id = "gameCount"></span></h2>
+    <h2 style="float: right; margin: 0px;">Total games on steam: <span id = "gameCount"></span></h2>
+    <h2 style="float: right; clear:right; margin: 0px;">Total hours on steam: <span id = "hourCount"></span></h2>
     <center>
       <h2 style="position: relative; top: -10px;"><span style = "text-decoration: underline;">Games i like</span><span style="font-size:13px;"> *in no particular
           order*</span></h2>
@@ -79,7 +80,7 @@
       <li>Stardew Valley</li>
       <li>Slime Rancher (Tabby best slime)</li>
       <li>BioShock</li>
-      <li>League of Legends (sadly)</li>
+      <li>League of Legends</li>
       <li>Skyrim</li>
       <li>Factorio</li>
       <li>Cities: Skylines</li>
@@ -92,10 +93,19 @@
       <li>Sid Meier's Civilization (5 + 6)</li>
       <li>Celeste</li>
     </ul>
-    <h2 style = "font-size:23px">If you cant tell from my over 200 games in my steam account, i like games. Mainly story games now due to my experience with online games being
+    <div class = "steamButton">
+      <h2 style="margin: 0px; text-decoration: underline;">Steam account total time played calculator</h2>
+      <h2 style="font-size: medium;">This is small function that uses the steamAPI to calculate total play time, feel free to check the JavaScript nothing malicious can be done,
+      or is done, with your steam ID. Your steam ID is in *Account Details* in the top right of the app and under your username in that menu, it should be a string of numbers, feel free to test this with my steamID (76561198112693639)</h2>
+      <h2 style="float:left; font-size: medium; position: relative; top: -6px;">Enter your steam account ID:</h2>
+      <input type="text" style="float: left; position: relative; top: -15px; background-color: #01013d; border: 1px solid#9B4F96; color:#D60270; width: 98%; font-size: large;" id = "steamButton" oninput="getSteamHours(document.getElementById('steamButton').value, 'customSteam');" on>
+      <h2 style="font-size: large; clear:both; margin: 2px;">Total Hours played:</h2>
+      <h2 style="margin: 0px;"><span id = "customSteam">????</span> hours<h2>
+    </div>
+    <h2 style = "font-size:23px">I mainly play story games now due to my experience with online games being
     getting neglected by valve on tf2 and watching one of my orginal favourate games turn into a mess (overwatch).<br>These trumatising experiences pushed me into a 
-    cycle of pain until i was forced to league of legends, which is what i mainly play now. Granted tf2 has stayed with me still and i play troldier on hightower 
-    even today.<br>My addiction to The binding of isaac is also crippling however but i am nearing completing a deadgod file at which point suffering on that game can end.</h2>
+    cycle of suffering until i was forced to the dreaded league of legends, which is what i mainly play now. Granted tf2 has stayed with me still and i play troldier on hightower 
+    even today.<br>My addiction to The binding of isaac is also crippling but i am nearing completing a deadgod file at which point suffering on that game can end.</h2>
   </div>
   <div class="rightbox">
     <center>
@@ -128,7 +138,7 @@
     <h2 style = "font-size:23px">I really really like music. Music for me is both a remedy for really stimulating environments and a way to relax which is how i got so 
     into it in the first place. The genres i mainly listen to are rap, rock and breakcore(not dnb).<br>
     The four album covers above you can see are: Exmilitary(Death Grips), Ants from Up There(Black Country, New Road), Visions and Afterthoughts(Red Vox) 
-    and Twin Fantasy(Car Seat Headrest). Unironically i would reccomend you to listen to all of them (apart from the Red Vox album because tbh its a masterpiece, i just love it)
+    and Twin Fantasy(Car Seat Headrest). Unironically i would reccomend you to listen to all of them (apart from the Red Vox album because tbh its not a masterpiece, i just love it)
     because they are genuine masterpieces and think its devastating anyone could go though life and not hear one that they could have a chance to have fallen in love with like i did.
     Some other small reccomendation i would give would be "Wide Awake!" by Parquet Courts, "Hallelujah" by Igorrr, "Blood Visions" by Jay Reatard and "Cheat Codes" 
     by Black Thought + Danger Mouse. </h2>

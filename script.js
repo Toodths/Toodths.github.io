@@ -1,14 +1,7 @@
-var totalPlayTime = 0;
-const accId = "76561198112693639"
-fetch('https://corsproxy.io/?https://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=28FE417B6906C45F07E57AE3177BCFC1&skip_unvetted_apps=false&steamid='+accId+'&format=json&include_played_free_games=1include_appinfo')
+getSteamHours("76561198112693639", "hourCount");
+fetch('https://corsproxy.io/?https://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=28FE417B6906C45F07E57AE3177BCFC1&skip_unvetted_apps=false&steamid=76561198112693639&format=json&include_played_free_games=1include_appinfo')
 .then(data => data.json())
-.then(Response => {console.log(Response);
-  for (let i = 0; i < Response.response.game_count; i++)
-  {
-    totalPlayTime += Response.response.games[i].playtime_forever;
-  }
-  console.log(totalPlayTime/60);
-  })
+.then(Response => {document.getElementById("gameCount").innerHTML = Response.response.game_count - 15;})
 
 function updateVol(){
   var slider = document.getElementById("myRange");
@@ -16,6 +9,20 @@ function updateVol(){
     var y = document.getElementById("v" + i.toString())
     y.volume = (slider.value / 100);
   }
+}
+
+function getSteamHours(steamid, elementid)
+{
+  var totalPlayTime = 0;
+  fetch('https://corsproxy.io/?https://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=28FE417B6906C45F07E57AE3177BCFC1&skip_unvetted_apps=false&steamid='+steamid+'&format=json&include_played_free_games=1include_appinfo')
+    .then(data => data.json())
+    .then(Response => {console.log(Response);
+      for (let i = 0; i < Response.response.game_count; i++)
+      {
+        totalPlayTime += Response.response.games[i].playtime_forever;
+      }
+      document.getElementById(elementid).innerHTML = (totalPlayTime/60).toFixed(2);
+    })
 }
 
 function randomIntFromInterval(min, max) { // min and max included 
