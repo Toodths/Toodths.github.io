@@ -1,4 +1,7 @@
 
+fetch('https://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=28FE417B6906C45F07E57AE3177BCFC1&skip_unvetted_apps=false&steamid=76561198112693639&format=json&include_played_free_games=1include_appinfo')
+.then(data => data.json())
+.then(success => console.log(success));
 
 function updateVol(){
   var slider = document.getElementById("myRange");
