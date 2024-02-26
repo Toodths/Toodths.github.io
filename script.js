@@ -14,16 +14,17 @@ function updateVol(){
 function getSteamHours(steamid, elementid)
 {
   var totalPlayTime = 0;
-  fetch('https://corsproxy.io/?https://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=28FE417B6906C45F07E57AE3177BCFC1&skip_unvetted_apps=false&steamid='+steamid+'&format=json&include_played_free_games=1include_appinfo')
+    fetch('https://corsproxy.io/?https://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=28FE417B6906C45F07E57AE3177BCFC1&skip_unvetted_apps=false&steamid='+steamid+'&format=json&include_played_free_games=1include_appinfo')
     .then(data => data.json())
     .then(Response => {console.log(Response);
       for (let i = 0; i < Response.response.game_count; i++)
-      {
-        totalPlayTime += Response.response.games[i].playtime_forever;
-      }
+        {
+          totalPlayTime += Response.response.games[i].playtime_forever;
+        }
       document.getElementById(elementid).innerHTML = (totalPlayTime/60).toFixed(2);
+      if ((totalPlayTime/60).toFixed(2) == 0) {document.getElementById(elementid).innerHTML = "????";}
     })
-}
+  }
 
 function randomIntFromInterval(min, max) { // min and max included 
     return Math.floor(Math.random() * (max - min + 1) + min)
