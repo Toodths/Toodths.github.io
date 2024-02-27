@@ -3,6 +3,7 @@ fetch('https://corsproxy.io/?https://api.steampowered.com/IPlayerService/GetOwne
 .then(data => data.json())
 .then(Response => {document.getElementById("gameCount").innerHTML = Response.response.game_count - 15;})
 
+
 function updateVol(){
   var slider = document.getElementById("myRange");
   for (let i = 1; i < 18; i++) {
@@ -10,6 +11,7 @@ function updateVol(){
     y.volume = (slider.value / 100);
   }
 }
+
 
 function getSteamHours(steamid, elementid)
 {
