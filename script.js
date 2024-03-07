@@ -6,7 +6,7 @@ fetch('https://corsproxy.io/?https://api.steampowered.com/IPlayerService/GetOwne
 
 function updateVol(){
   var slider = document.getElementById("myRange");
-  for (let i = 1; i < 18; i++) {
+  for (let i = 1; i < 20; i++) {
     var y = document.getElementById("v" + i.toString())
     y.volume = (slider.value / 100);
   }

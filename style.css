@@ -6,74 +6,77 @@ html {
   
 .welcome{
     width: 900px;
-    background: #01013d;
+    background: #0b0961;
     text-align: center;
-    border: 5px outset #9B4F96;
+    border: 5px outset #9b4f96;
     margin-top: 15px;
     margin-bottom: 10px;
     padding: 15px;
     position: relative;
-    box-shadow: 0px 0px 10px #9B4F96;
+    box-shadow: 0px 0px 10px #9b4f96;
     border-radius: 30px;
 }
   
 .leftbox {
     border-radius: 30px;
     width: 620px;
-    border: 5px outset #9B4F96;
-    background-color: #01013d;
+    border: 5px outset #9b4f96;
+    background-color: #0b0961;
     padding: 5px;
     margin: 5px;
-    box-shadow: 0px 0px 10px #9B4F96;
+    box-shadow: 0px 0px 10px #9b4f96;
     float: left;
 }
   
 .rightbox {
     border-radius: 30px;
     width: 800px;
-    border: 5px outset #9B4F96;
-    background-color: #01013d;
+    border: 5px outset #9b4f96;
+    background-color: #0b0961;
     padding: 5px;
     margin: 5px;
-    box-shadow: 0px 0px 10px #9B4F96;
+    box-shadow: 0px 0px 10px #9b4f96;
     float: right;
 }
   
 header {
     width: 100%;
     height: 50px;
-    border-top: 3px solid #9B4F96 ;
-    border-bottom: 3px solid #9B4F96;
-    box-shadow: -1px 0 5px #9B4F96;
+    border-top: 3px solid #9b4f96;
+    border-bottom: 3px solid #9b4f96;
+    box-shadow: -1px 0 5px #9b4f96;
 }
   
 h1{
-    color: #D60270;
+    font-family: monospace;
+    color: #d60270;
 }
   
 h2{
-    color: #D60270;
+    font-family: monospace;
+    color: #d60270;
 }
   
 li{
-    color: #D60270;
+    font-family: monospace;
+    color: #d60270;
 }
 
 video {
     border-radius: 15px;
-    border: 2px solid #9B4F96;
-    background-color: #01013d;
+    border: 2px solid #9b4f96;
+    background-color: #0b0961;
     padding: 1px;
     margin: 3px;
-    box-shadow: 0px 0px 10px #9B4F96;
+    box-shadow: 0px 0px 10px #9b4f96;
 }
 
 button {
-    background-color: #01013d;
-    color: #9B4F96;
+    background-color: #0b0961;
+    color: #9b4f96;
     border-radius: 7px;
-    border: 2px outset #9B4F96;
-    box-shadow: 0px 0px 3px #9B4F96;
+    border: 2px outset #9b4f96;
+    box-shadow: 0px 0px 3px #9b4f96;
 }
 
 .slider {
@@ -81,7 +84,7 @@ button {
     width: 20%;
     height: 8px;
     border-radius: 5px;  
-    background: #D60270;
+    background: #9b4f96;
     outline: none;
     -webkit-transition: .2s;
     transition: opacity .2s;
@@ -93,8 +96,8 @@ button {
     width: 25px;
     height: 25px;
     border-radius: 50%; 
-    border: 2px solid #D60270;
-    background: #01013d;
+    border: 2px solid #9b4f96;
+    background: #0b0961;
     cursor: pointer;
 }
 
@@ -103,22 +106,40 @@ img{
 }
 
 summary{
-    color: #D60270;
+    font-family: monospace;
+    color: #d60270;
     font-size: 23px;
 }
 
 .steamButton{
     border-radius: 30px;
     width: 300px;
-    border: 5px outset #9B4F96;
-    background-color: #01013d;
+    border: 5px outset #9b4f96;
+    background-color: #0b0961;
     padding: 5px;
     margin: 5px;
-    box-shadow: 0px 0px 10px #9B4F96;
+    box-shadow: 0px 0px 10px #9b4f96;
     float: right;
 }
 
 p{
-    color: #D60270;
+    font-family: monospace;
+    color: #d60270;
     font-size: 20px;
+}
+
+#albumName{
+    font-weight: bold;
+    color: #ff00dd;
+}
+
+#score{
+    font-weight: bold;
+    font-size: small;
+    color: #0aefff;
+}
+
+#title{
+    text-decoration: underline;
+    color:#36ada7;
 }
