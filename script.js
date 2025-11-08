@@ -1,5 +1,5 @@
 getSteamHours("76561198112693639", "hourCount");
-fetch('https://corsproxy.io/?https://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=28FE417B6906C45F07E57AE3177BCFC1&skip_unvetted_apps=false&steamid=76561198112693639&format=json&include_played_free_games=1include_appinfo')
+fetch('https://corsproxy.io/?https://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=505285CEE61A95B782C4310D8B9536C0&skip_unvetted_apps=false&steamid=76561198112693639&format=json&include_played_free_games=1include_appinfo')
 .then(data => data.json())
 .then(Response => {document.getElementById("gameCount").innerHTML = Response.response.game_count - 15;})
 
